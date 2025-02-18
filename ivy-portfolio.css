@@ -148,6 +148,62 @@ nav {
   border-radius: 50%;
 }
 
+/* Add these media queries to your existing CSS */
+@media only screen and (max-width: 1300px) {
+  /* Adjust nav padding */
+  nav {
+    padding-inline: 5vw;
+  }
+
+  /* Reduce nav link spacing */
+  .nav-link {
+    padding-inline: 10px;
+    margin-inline: 10px;
+    font-size: 14px; /* Smaller font size */
+  }
+
+  /* Adjust logo size */
+  .nav-name {
+    font-size: 24px;
+  }
+
+  /* Adjust the nav logo margin */
+  .nav-logo {
+    margin-left: -40px;
+  }
+
+  /* Make nav button smaller */
+  .nav-button .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+/* Further adjustments for smaller screens */
+@media only screen and (max-width: 1000px) {
+  /* Make nav more compact */
+  nav {
+    height: 80px;
+    line-height: 80px;
+  }
+
+  /* Further reduce spacing */  
+  .nav-link {
+    padding-inline: 8px;
+    margin-inline: 8px;
+    font-size: 13px;
+  }
+
+  /* Adjust logo for smaller screens */
+  .nav-name {
+    font-size: 22px;
+    margin-left: 50px;
+  }
+
+  .nav-logo span {
+    font-size: 4em;
+  }
+}
+
 /* ----- WRAPPER DESIGN ----- */
 .wrapper {
   padding-inline: 10vw;
@@ -1076,6 +1132,15 @@ footer {
     align-content: flex-start;
     min-height: 60vh;
   }
+
+  .featured-text-card span {
+    font-size: 15px;
+  }
+
+  .scroll-btn {
+    display: none;
+  }
+
   .social_icons {
     margin-top: 2em;
   }
@@ -1084,7 +1149,8 @@ footer {
     justify-content: center;
     min-height: 150px;
     width: 100%;
-    margin-top: 65px;
+    margin-top: 90px;
+    margin-bottom: 50px;
   }
   .image,
   .image img {
@@ -1111,6 +1177,32 @@ footer {
   }
   .project-box {
     width: 80%;
+  }
+
+  .skills-box {
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .skills-header {
+    margin-bottom: 20px;
+  }
+
+  .skills-header h3 {
+    font-size: 18px;
+  }
+
+  .skills-list {
+    justify-content: left;
+  }
+
+  .skills-list span {
+    font-size: 13px;
+    padding: 2px 8px;
+  }
+
+  .middle-footer .footer-menu {
+    display: none;
   }
 }
 
